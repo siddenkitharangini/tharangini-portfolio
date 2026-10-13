@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Metadata -->
+  <title>Tharangini Siddenki | UI/UX Designer & Web Developer</title>
+  <meta name="description" content="Personal portfolio of Tharangini Siddenki, a Computer Science student, UI/UX Designer, and Web Developer passionate about frontend development and digital product design.">
+  <meta name="keywords" content="Tharangini Siddenki, UI/UX Designer, Web Developer, Frontend Developer, Computer Science, React, Next.js, Portfolio">
+  <meta name="author" content="Tharangini Siddenki">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing (Strictly image-free) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tharangini Siddenki | UI/UX Designer & Web Developer">
+  <meta property="og:description" content="Cinematic, geometric developer portfolio showcasing frontend web applications, UI/UX designs, and database architectures.">
+  <meta property="og:url" content="https://github.com/siddenkitharangini">
+  <meta property="og:site_name" content="Tharangini Siddenki Portfolio">
+
+  <!-- Favicon: Pure Vector SVG Glyph (No external raster image) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,2 30,16 16,30 2,16' fill='%23050505' stroke='%23ff1018' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23ff1018'/%3E%3C/svg%3E">
+
+  <!-- Typography: Google Fonts (Space Grotesk, Inter, JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css?v=4">
+</head>
+<body>
+
+  <!-- Ambient Geometric Wireframe Background (Pure CSS & SVG) -->
+  <div class="ambient-wireframe-bg" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="ambient-glow-orb orb-hero"></div>
+    <div class="ambient-glow-orb orb-projects"></div>
+    <div class="ambient-glow-orb orb-contact"></div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo" id="site-logo" aria-label="Tharangini Siddenki Home">
+        <span class="logo-brackets">[</span>THARANGINI<span class="logo-dot">.</span>DEV<span class="logo-brackets">]</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta">
+          <span>Let's Talk</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary" style="width: 100%;">
+      <span>Initiate Project Contact</span>
+    </a>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid-layout">
+          
+          <!-- Left Content -->
+          <div class="hero-content">
+            <div class="hero-badge fade-up">
+              <span class="pulse-dot"></span>
+              <span>CREATIVE DEVELOPER · UI/UX DESIGNER</span>
+            </div>
+
+            <h1 class="hero-title fade-up delay-1">
+              Designing Ideas.<br>
+              <span class="gradient-text-red">Building Experiences.</span>
+            </h1>
+
+            <div class="hero-subtitle-tag fade-up delay-2">
+              <span>UI/UX DESIGNER &amp; WEB DEVELOPER</span>
+            </div>
+
+            <p class="hero-intro fade-up delay-2">
+              I'm Tharangini Siddenki, a Computer Science student passionate about creating clean, responsive, and user-friendly digital experiences through frontend development and UI/UX design.
+            </p>
+
+            <p class="hero-supporting fade-up delay-3">
+              I turn ideas into intuitive interfaces and functional web experiences, combining creative design with practical development.
+            </p>
+
+            <div class="hero-actions fade-up delay-4">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore My Work</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <span>Let's Connect</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Hero Visual: Futuristic CSS/SVG Wireframe HUD (NO IMAGE) -->
+          <div class="hero-wireframe-visual fade-up delay-3" aria-hidden="true">
+            <div class="wireframe-schematic-card">
+              <div class="schematic-header">
+                <span class="schematic-code">SCHEMATIC // HUD_01</span>
+                <span class="schematic-status">
+                  <span class="pulse-dot" style="width: 5px; height: 5px;"></span>
+                  LIVE SYSTEM
+                </span>
+              </div>
+              
+              <!-- Bespoke Vector Wireframe HUD Canvas -->
+              <svg class="schematic-svg-canvas" viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg">
+                <!-- Concentric Radar Wireframe -->
+                <circle cx="190" cy="130" r="105" fill="none" stroke="#ff1018" stroke-width="0.75" stroke-opacity="0.25" stroke-dasharray="3 4"/>
+                <circle cx="190" cy="130" r="75" fill="none" stroke="#ff1018" stroke-width="0.75" stroke-opacity="0.35"/>
+                <circle cx="190" cy="130" r="45" fill="none" stroke="#ff1018" stroke-width="1" stroke-opacity="0.5"/>
+                <circle cx="190" cy="130" r="12" fill="#121218" stroke="#ff1018" stroke-width="1.5"/>
+
+                <!-- Crosshair Axes -->
+                <line x1="190" y1="15" x2="190" y2="245" stroke="#ff1018" stroke-width="0.6" stroke-opacity="0.3" stroke-dasharray="2 3"/>
+                <line x1="30" y1="130" x2="350" y2="130" stroke="#ff1018" stroke-width="0.6" stroke-opacity="0.3" stroke-dasharray="2 3"/>
+
+                <!-- Rotating Wireframe Node Diamond -->
+                <polygon points="190,55 265,130 190,205 115,130" fill="none" stroke="#ff1018" stroke-width="1.2" stroke-opacity="0.65"/>
+                <polygon points="190,80 240,130 190,180 140,130" fill="rgba(255, 16, 24, 0.03)" stroke="#ff1018" stroke-width="0.8" stroke-opacity="0.45"/>
+
+                <!-- Node markers -->
+                <circle cx="190" cy="55" r="3.5" fill="#ff1018"/>
+                <circle cx="265" cy="130" r="3.5" fill="#ff1018"/>
+                <circle cx="190" cy="205" r="3.5" fill="#ff1018"/>
+                <circle cx="115" cy="130" r="3.5" fill="#ff1018"/>
+
+                <!-- High-Tech Telemetry Brackets -->
+                <path d="M 45,35 L 30,35 L 30,50" fill="none" stroke="#ff1018" stroke-width="1.5"/>
+                <path d="M 335,35 L 350,35 L 350,50" fill="none" stroke="#ff1018" stroke-width="1.5"/>
+                <path d="M 45,225 L 30,225 L 30,210" fill="none" stroke="#ff1018" stroke-width="1.5"/>
+                <path d="M 335,225 L 350,225 L 350,210" fill="none" stroke="#ff1018" stroke-width="1.5"/>
+
+                <!-- Coordinate Labels -->
+                <text x="35" y="65" fill="#ff1018" font-size="8" font-family="monospace">POS [40.71, -74.00]</text>
+                <text x="35" y="78" fill="#888899" font-size="7" font-family="monospace">STACK // REACT · NEXT · SQL</text>
+                <text x="250" y="215" fill="#ff1018" font-size="8" font-family="monospace">SYS.STATUS // OK</text>
+                <text x="250" y="226" fill="#888899" font-size="7" font-family="monospace">DESIGN // MINIMAL</text>
+              </svg>
+
+              <div class="schematic-footer">
+                <div class="schematic-metric">
+                  FOCUS
+                  <strong>UI/UX &amp; CODE</strong>
+                </div>
+                <div class="schematic-metric">
+                  PROJECTS
+                  <strong>8+ VERIFIED</strong>
+                </div>
+                <div class="schematic-metric">
+                  AESTHETIC
+                  <strong>FUTURISTIC</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Scroll Down Mouse Indicator -->
+        <a href="#about" class="hero-scroll-indicator" aria-label="Scroll to About section">
+          <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+          </div>
+          <span>Scroll</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. ABOUT ME SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="about">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-label">A Little About Me</span>
+          <h2 class="section-title">Academic &amp; Creative Foundation</h2>
+          <p class="section-desc">
+            Bridging conceptual user interface design with practical, structured web development.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Biography & Education -->
+          <div class="about-text-col fade-up">
+            <p class="about-lead">
+              I am a Computer Science student simultaneously pursuing rigorous technical learning at both <strong>NxtWave Institute of Advanced Technologies</strong> and <strong>BITS Pilani</strong> (B.Sc. in Computer Science).
+            </p>
+
+            <p class="about-paragraph">
+              My core interests center on frontend development, UI/UX design, database management, and developing practical digital products. I take pride in crafting clean, accessible code architectures that transform complex problems into seamless and intuitive user interfaces.
+            </p>
+
+            <p class="about-paragraph">
+              Driven by a continuous learning mindset, creativity, and a meticulous attention to detail, I strive to build software that not only functions reliably but delivers memorable, refined user experiences.
+            </p>
+
+            <!-- Academic Pathway Cards -->
+            <div class="education-cards">
+              <div class="edu-card">
+                <div class="edu-institution">BITS Pilani</div>
+                <div class="edu-degree">B.Sc. in Computer Science</div>
+                <div class="edu-status">Active Undergraduate Degree · Foundational Computing &amp; Systems</div>
+              </div>
+
+              <div class="edu-card">
+                <div class="edu-institution">NxtWave Institute of Advanced Technologies</div>
+                <div class="edu-degree">Computer Science &amp; Full Stack Specialization</div>
+                <div class="edu-status">Active Professional Training · Practical Web &amp; Software Engineering</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: CSS-Designed Decorative Element (Strictly NO Image) -->
+          <div class="about-visual-col fade-up delay-2">
+            <div class="hud-panel">
+              <div class="hud-corner top-left"></div>
+              <div class="hud-corner top-right"></div>
+              <div class="hud-corner bottom-left"></div>
+              <div class="hud-corner bottom-right"></div>
+
+              <div class="hud-title-bar">
+                <span>SYSTEM_TELEMETRY // DEV_PROFILE</span>
+                <span>STATUS: ACTIVE</span>
+              </div>
+
+              <div class="hud-specs-list">
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">DEVELOPER</span>
+                  <span class="hud-spec-val">Tharangini Siddenki</span>
+                </div>
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">PRIMARY DISCIPLINE</span>
+                  <span class="hud-spec-val">UI/UX &amp; Frontend</span>
+                </div>
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">EDUCATION DUALITY</span>
+                  <span class="hud-spec-val">BITS Pilani + NxtWave</span>
+                </div>
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">UI/UX PROTOTYPING</span>
+                  <span class="hud-spec-val status-badge-active">USER-CENTRIC</span>
+                </div>
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">FRONTEND ARCHITECTURE</span>
+                  <span class="hud-spec-val status-badge-active">MODULAR &amp; FAST</span>
+                </div>
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">DATABASE INTEGRITY</span>
+                  <span class="hud-spec-val status-badge-active">RELATIONAL SQL</span>
+                </div>
+                <div class="hud-spec-item">
+                  <span class="hud-spec-label">LEARNING ORIENTATION</span>
+                  <span class="hud-spec-val">Continuous Evolution</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. TECHNICAL SKILLS SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="skills">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-label">Technical Competencies</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-desc">
+            Carefully curated technical capabilities verified through real-world projects, academic coursework, and practical code implementations.
+          </p>
+        </div>
+
+        <div class="skills-categories-grid">
+          
+          <!-- Category 1: Frontend Development -->
+          <div class="skill-category-card fade-up delay-1">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Frontend Development</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">HTML5</span>
+              <span class="skill-chip">CSS3</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">React.js</span>
+              <span class="skill-chip">Next.js</span>
+              <span class="skill-chip">Tailwind CSS</span>
+              <span class="skill-chip">Responsive Web Design</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend and Databases -->
+          <div class="skill-category-card fade-up delay-2">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Backend &amp; Databases</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Node.js</span>
+              <span class="skill-chip">Express.js</span>
+              <span class="skill-chip">SQL</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">Database Design</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Programming and Tools -->
+          <div class="skill-category-card fade-up delay-3">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">Programming &amp; Tools</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Vercel</span>
+              <span class="skill-chip">VS Code</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Design -->
+          <div class="skill-category-card fade-up delay-4">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
+              <h3 class="skill-category-title">UI/UX &amp; Interface Design</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="skill-chip">UI/UX Design</span>
+              <span class="skill-chip">Interface Design</span>
+              <span class="skill-chip">Layout &amp; Typography</span>
+              <span class="skill-chip">User-Friendly Design</span>
+              <span class="skill-chip">Mobile-First Design</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. PROJECTS SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="projects">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-label">Verified Work</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-desc">
+            Production web platforms, responsive frontend experiments, full-stack systems, and relational databases inspected directly from my GitHub repositories.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar fade-up" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+          <button class="filter-btn" data-filter="database" role="tab" aria-selected="false">Database</button>
+        </div>
+
+        <!-- Dynamic Projects Grid (Populated by scripts/main.js & projects-data.js) -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Rendered dynamically with pure CSS/SVG wireframe schematics -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. EXPERIENCE AND INTERNSHIP SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="experience">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-label">Career Journey</span>
+          <h2 class="section-title">Experience &amp; Internship</h2>
+          <p class="section-desc">
+            Practical professional exposure and focused technical responsibilities.
+          </p>
+        </div>
+
+        <div class="timeline">
+          
+          <!-- Experience Item: Student Tribe -->
+          <div class="timeline-item fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">AI Annotation Intern</h3>
+                <span class="timeline-duration">15 Days Duration</span>
+              </div>
+              <div class="timeline-company">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Student Tribe</span>
+              </div>
+              <p class="timeline-desc">
+                Completed a 15-day internship experience at Student Tribe focused on AI annotation, gaining exposure to annotation workflows and careful data labeling.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. ACHIEVEMENTS & ACTIVITIES SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="achievements">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-label">Milestones</span>
+          <h2 class="section-title">Achievements &amp; Activities</h2>
+          <p class="section-desc">
+            Engagements demonstrating teamwork, technical problem-solving under constraints, and hands-on dedication.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- Item 1: Hackathon Participant -->
+          <div class="achievement-card fade-up delay-1">
+            <div class="achievement-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                <path d="M4 22h16"></path>
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H7"></path>
+                <path d="M14 14.66V17c0 .55.45 1 1 1h2"></path>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+              </svg>
+            </div>
+            <span class="achievement-badge">COLLABORATIVE CODING</span>
+            <h3 class="achievement-title">Hackathon Participant</h3>
+            <p class="achievement-desc">
+              Participated in a hackathon and gained experience in collaborative problem-solving, rapid prototyping, and developing practical technological ideas under tight time constraints.
+            </p>
+          </div>
+
+          <!-- Item 2: AI Annotation Internship -->
+          <div class="achievement-card fade-up delay-2">
+            <div class="achievement-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <span class="achievement-badge">INDUSTRY EXPOSURE</span>
+            <h3 class="achievement-title">AI Annotation Internship</h3>
+            <p class="achievement-desc">
+              Completed structured 15-day internship at Student Tribe focusing on foundational AI annotation methods, data structuring, and rigorous quality inspection.
+            </p>
+          </div>
+
+          <!-- Item 3: Selected Projects -->
+          <div class="achievement-card fade-up delay-3">
+            <div class="achievement-icon-wrap" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <span class="achievement-badge">OPEN SOURCE &amp; BUILDS</span>
+            <h3 class="achievement-title">Selected Projects</h3>
+            <p class="achievement-desc">
+              Architected and deployed 8+ verified public repositories across modern frontend frameworks (React, Next.js, Vite), backend architectures (Spring Boot), and relational SQL databases.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. GITHUB AND PROJECT ACTIVITY SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="github-activity">
+      <div class="container">
+        
+        <div class="github-section-card fade-up">
+          
+          <div class="github-header-bar">
+            <div class="github-title-group">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-red">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <h2 class="section-title" style="font-size: 1.65rem; margin-bottom: 0;">GitHub &amp; Project Activity</h2>
+            </div>
+
+            <!-- Dynamic Status Badge -->
+            <div id="github-status-badge" class="github-status-indicator status-connecting">
+              <span class="status-dot"></span>
+              <span class="status-text">Connecting to GitHub API...</span>
+            </div>
+          </div>
+
+          <!-- Real Metrics (Fetched live via API) -->
+          <div class="github-metrics-grid" id="github-user-metrics">
+            <!-- Populated dynamically via scripts/github.js -->
+            <div class="metric-card">
+              <div class="metric-header"><span class="metric-label">PUBLIC REPOSITORIES</span></div>
+              <div class="metric-value">9</div>
+              <div class="metric-footer">Verified on Profile</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-header"><span class="metric-label">PROFILE HANDLE</span></div>
+              <div class="metric-value text-mono">@siddenkitharangini</div>
+              <div class="metric-footer">Active Developer Profile</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-header"><span class="metric-label">ACTIVITY STATUS</span></div>
+              <div class="metric-value">Active</div>
+              <div class="metric-footer">Ongoing Code Contributions</div>
+            </div>
+          </div>
+
+          <!-- Live Event Log -->
+          <div class="github-feed-box">
+            <div class="feed-header-label">
+              <span class="pulse-dot" style="width: 6px; height: 6px;"></span>
+              <span>Recent Public Repository Events</span>
+            </div>
+            <div id="github-activity-feed">
+              <div class="activity-row">
+                <div class="activity-bullet"></div>
+                <div class="activity-main">
+                  <div class="activity-title-bar">
+                    <span class="activity-action">Fetching live event stream...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct CTA -->
+          <div style="display: flex; justify-content: flex-start;">
+            <a href="https://github.com/siddenkitharangini" target="_blank" rel="noopener noreferrer" class="btn btn-primary dynamic-github-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <span>View My GitHub</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. CONTACT SECTION
+         ====================================================================== -->
+    <section class="section-padding" id="contact">
+      <div class="container">
+        
+        <div class="section-header fade-up">
+          <span class="section-label">Initiate Conversation</span>
+          <h2 class="section-title">HAVE AN IDEA? LET'S BUILD IT.</h2>
+          <p class="section-desc">
+            I'm always interested in learning, collaborating on creative projects, and exploring opportunities in web development and UI/UX design.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Contact Channels -->
+          <div class="contact-info-col fade-up">
+            <p class="contact-lead">
+              Feel free to reach out directly via email, connect on professional networks, or check out my work across platforms.
+            </p>
+
+            <div class="contact-channels">
+              
+              <!-- Direct Email Channel -->
+              <div class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">Direct Email</span>
+                  <a href="mailto:tharangini.siddenki@gmail.com" class="channel-val dynamic-email-link dynamic-email-text">
+                    tharangini.siddenki@gmail.com
+                  </a>
+                </div>
+                <button type="button" class="copy-email-btn" id="copy-email-btn" aria-label="Copy email address to clipboard">
+                  Copy
+                </button>
+              </div>
+
+              <!-- LinkedIn Channel -->
+              <a href="https://www.linkedin.com/in/tharangini-siddenki" target="_blank" rel="noopener noreferrer" class="channel-card dynamic-linkedin-link">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-val">in/tharangini-siddenki</span>
+                </div>
+                <span class="footer-arrow">↗</span>
+              </a>
+
+              <!-- GitHub Channel -->
+              <a href="https://github.com/siddenkitharangini" target="_blank" rel="noopener noreferrer" class="channel-card dynamic-github-link">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-val">@siddenkitharangini</span>
+                </div>
+                <span class="footer-arrow">↗</span>
+              </a>
+
+            </div>
+
+            <div class="config-note">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <span>Email is configurable in <code>scripts/config.js</code></span>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-card fade-up delay-2">
+            <form id="contact-form" novalidate>
+              
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Frontend Project Inquiry" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Describe your project, question, or proposal..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="/" class="logo" aria-label="Tharangini Siddenki Home">
+            <span class="logo-brackets">[</span>THARANGINI<span class="logo-dot">.</span>DEV<span class="logo-brackets">]</span>
+          </a>
+          <p class="footer-tagline">
+            Computer Science student passionate about frontend web development and UI/UX design.
+          </p>
+          <p class="footer-closing">
+            "Designed with intention. Built with code."
+          </p>
+        </div>
+
+        <!-- Fast Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link"><span class="footer-arrow">›</span> Home</a></li>
+            <li><a href="#about" class="footer-link"><span class="footer-arrow">›</span> About</a></li>
+            <li><a href="#skills" class="footer-link"><span class="footer-arrow">›</span> Skills</a></li>
+            <li><a href="#projects" class="footer-link"><span class="footer-arrow">›</span> Projects</a></li>
+            <li><a href="#experience" class="footer-link"><span class="footer-arrow">›</span> Experience</a></li>
+            <li><a href="#achievements" class="footer-link"><span class="footer-arrow">›</span> Achievements</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Code -->
+        <div>
+          <h4 class="footer-col-title">Profiles</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="https://github.com/siddenkitharangini" target="_blank" rel="noopener noreferrer" class="footer-link dynamic-github-link">
+                <span class="footer-arrow">↗</span> GitHub Profile
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tharangini-siddenki" target="_blank" rel="noopener noreferrer" class="footer-link dynamic-linkedin-link">
+                <span class="footer-arrow">↗</span> LinkedIn Profile
+              </a>
+            </li>
+            <li>
+              <a href="mailto:tharangini.siddenki@gmail.com" class="footer-link dynamic-email-link">
+                <span class="footer-arrow">✉</span> Direct Mail
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; <span id="current-year">2026</span> Tharangini Siddenki. All rights reserved.
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);">
+          Pure Black (#050505) · Red Wireframe (#ff1018)
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Modular Scripts -->
+  <script src="scripts/config.js"></script>
+  <script src="scripts/projects-data.js"></script>
+  <script src="scripts/github.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
