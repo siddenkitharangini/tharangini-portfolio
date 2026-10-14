@@ -1157,8 +1157,10 @@ section[id] {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.75rem;
+  gap: 1.5rem; /* reduced gap for tighter layout */
   width: 100%;
+  /* Align items to start to prevent equal height stretching */
+  align-items: start;
 }
 
 @media (min-width: 680px) {
@@ -1187,7 +1189,8 @@ section[id] {
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  height: 100%;
+  /* Remove explicit height to let content dictate size */
+  height: auto;
 }
 
 .project-card:hover {
@@ -1197,10 +1200,55 @@ section[id] {
   transform: translateY(-4px);
 }
 
+/* Active (click/tap) feedback */
+.project-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.75), 0 0 15px rgba(255, 16, 24, 0.12);
+}
+
+/* Button hover effects within project card */
+.project-actions .btn {
+  transition: background-color var(--transition-quick), transform var(--transition-quick);
+}
+.project-actions .btn:hover {
+  background-color: var(--accent-red);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .project-card, .project-card:hover, .project-card:active {
+    transition: none !important;
+    transform: none !important;
+  }
+  .project-actions .btn {
+    transition: none !important;
+  }
+}
+
 /* Wireframe Visual Header (Pure Vector SVG Schematics - NO RASTER IMAGES) */
-.project-visual-header {
+/* Specific height adjustments for oversized project cards */
+/* Cricket Squad & Analytics Management (fullstack) */
+.project-card[data-category="fullstack"] .project-visual-header {
+  height: 120px; /* reduced from 140px */
+}
+/* University Examination System Database (database) */
+.project-card[data-category="database"] .project-visual-header {
+  height: 120px; /* reduced from 140px */
+}
+/* Responsive Developer Landing Page (8th card in grid) */
+.projects-grid > .project-card:nth-child(8) .project-visual-header {
+  height: 120px; /* reduced from 140px */
+}
+/* Ensure overall card height does not exceed compact size */
+.project-card[data-category="fullstack"],
+.project-card[data-category="database"],
+.projects-grid > .project-card:nth-child(8) {
+  max-height: 380px; /* enough for content but prevents excess */
+}
   width: 100%;
-  height: 175px;
+  height: 140px; /* reduced height for tighter cards */
   background-color: #09090d;
   border-bottom: 1px solid rgba(255, 16, 24, 0.15);
   position: relative;
@@ -1236,7 +1284,7 @@ section[id] {
 
 /* Project Content */
 .project-content {
-  padding: clamp(1.25rem, 3vw, 1.75rem);
+  padding: clamp(0.75rem, 2vw, 1.25rem); /* reduced vertical padding */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
